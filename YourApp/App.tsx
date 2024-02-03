@@ -12,7 +12,7 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import {ScrollView, StyleSheet, Text, View, useColorScheme} from 'react-native';
+import {Linking, ScrollView, StyleSheet, Text, TouchableOpacity, View, useColorScheme} from 'react-native';
 
 import type {PropsWithChildren} from 'react';
 import React from 'react';
@@ -48,9 +48,16 @@ function Section({children, title}: SectionProps): React.JSX.Element {
 }
 
 function App(): React.JSX.Element {
+  const handlePress = () => {
+    // Specify the URL you want to navigate to
+    const url = 'https://www.youtube.com/watch?v=N7SHIw9rfyg';
+    
+    // Open the URL with Linking API
+    Linking.openURL(url).catch(err => console.error("Failed to open URL:", err));
+  };
   return (
     <ScrollView contentInsetAdjustmentBehavior="automatic">
-      <Header />
+      <Header title="hi"/>
       <View>
       <Section title="Welcome to EyeTunes!!">
           Made with love by Cindy, Edison, Ian, and William.
@@ -65,10 +72,13 @@ function App(): React.JSX.Element {
         <Section title="Debug">
           <DebugInstructions />
         </Section>
-        <Section title="Learn More">
-          Read the docs to discover what to do next:
-        </Section>
-        <LearnMoreLinks />
+        <Section title="Button">
+      Helloooooo
+      <TouchableOpacity visionos_hoverEffect="lift" onPress={handlePress}>
+        <Text>Click me</Text>
+      </TouchableOpacity>
+    </Section>
+        
       </View>
     </ScrollView>
   );
