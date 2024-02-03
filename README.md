@@ -1,1 +1,1 @@
-# QHacks
+# QHacks (Quacks)
