@@ -5,10 +5,6 @@
  * @format
  */
 
-import React from 'react';
-import type {PropsWithChildren} from 'react';
-import {ScrollView, StyleSheet, Text, useColorScheme, View} from 'react-native';
-
 import {
   Colors,
   DebugInstructions,
@@ -16,6 +12,10 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import {ScrollView, StyleSheet, Text, View, useColorScheme} from 'react-native';
+
+import type {PropsWithChildren} from 'react';
+import React from 'react';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -52,6 +52,9 @@ function App(): React.JSX.Element {
     <ScrollView contentInsetAdjustmentBehavior="automatic">
       <Header />
       <View>
+      <Section title="Welcome to EyeTunes!!">
+          Made with love by Cindy, Edison, Ian, and William.
+        </Section>
         <Section title="Step One">
           Edit <Text style={styles.highlight}>App.tsx</Text> to change this
           screen and then come back to see your edits.
