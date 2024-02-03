@@ -73,11 +73,10 @@ function App(): React.JSX.Element {
           <DebugInstructions />
         </Section>
         <Section title="Button">
-      Helloooooo
-      <TouchableOpacity visionos_hoverEffect="lift" onPress={handlePress}>
-        <Text>Click me</Text>
-      </TouchableOpacity>
-    </Section>
+          <TouchableOpacity visionos_hoverEffect="lift" onPress={handlePress}>
+            <Text>Click me</Text>
+          </TouchableOpacity>
+        </Section>
         
       </View>
     </ScrollView>
