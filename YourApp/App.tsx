@@ -8,11 +8,10 @@
 import {
   Colors,
   DebugInstructions,
-  Header,
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import {Linking, ScrollView, StyleSheet, Text, TouchableOpacity, View, useColorScheme} from 'react-native';
+import {FlatList, Header, Image, Linking, ScrollView, StyleSheet, Text, TouchableOpacity, View, useColorScheme} from 'react-native';
 
 import type {PropsWithChildren} from 'react';
 import React from 'react';
@@ -47,35 +46,36 @@ function Section({children, title}: SectionProps): React.JSX.Element {
   );
 }
 
+const images = [
+  { id: '1', uri: 'https://media.discordapp.net/attachments/1118633568046960651/1203211737453695006/IMG_8235.jpg?ex=65d04540&is=65bdd040&hm=2af8ecc77c7e703da539c12a55268488bb2ea8e5d8766625dbeaefedf02a23d1&=&format=webp&width=712&height=948', url: 'https://www.youtube.com/watch?v=N7SHIw9rfyg' },
+  { id: '2', uri: 'https://media.discordapp.net/attachments/1118633568046960651/1203211737453695006/IMG_8235.jpg?ex=65d04540&is=65bdd040&hm=2af8ecc77c7e703da539c12a55268488bb2ea8e5d8766625dbeaefedf02a23d1&=&format=webp&width=712&height=948', url: 'https://www.youtube.com/watch?v=N7SHIw9rfyg' },
+  { id: '3', uri: 'https://media.discordapp.net/attachments/1118633568046960651/1203211737453695006/IMG_8235.jpg?ex=65d04540&is=65bdd040&hm=2af8ecc77c7e703da539c12a55268488bb2ea8e5d8766625dbeaefedf02a23d1&=&format=webp&width=712&height=948', url: 'https://www.youtube.com/watch?v=N7SHIw9rfyg' },
+  { id: '4', uri: 'https://media.discordapp.net/attachments/1118633568046960651/1203211737453695006/IMG_8235.jpg?ex=65d04540&is=65bdd040&hm=2af8ecc77c7e703da539c12a55268488bb2ea8e5d8766625dbeaefedf02a23d1&=&format=webp&width=712&height=948', url: 'https://www.youtube.com/watch?v=N7SHIw9rfyg' },
+  { id: '5', uri: 'https://media.discordapp.net/attachments/1118633568046960651/1203211737453695006/IMG_8235.jpg?ex=65d04540&is=65bdd040&hm=2af8ecc77c7e703da539c12a55268488bb2ea8e5d8766625dbeaefedf02a23d1&=&format=webp&width=712&height=948', url: 'https://www.youtube.com/watch?v=N7SHIw9rfyg' },
+
+  // Add more images and URLs as needed
+];
+
+function handlePress(url) {
+  Linking.openURL(url).catch(err => console.error("Failed to open URL:", err));
+}
+
 function App(): React.JSX.Element {
-  const handlePress = () => {
-    // Specify the URL you want to navigate to
-    const url = 'https://www.youtube.com/watch?v=N7SHIw9rfyg';
-    
-    // Open the URL with Linking API
-    Linking.openURL(url).catch(err => console.error("Failed to open URL:", err));
-  };
   return (
     <ScrollView contentInsetAdjustmentBehavior="automatic">
-      <Header title="hi"/>
       <View>
-      <Section title="Welcome to EyeTunes!!">
+        <Section title="Welcome to EyeTunes!!">
           Made with love by Cindy, Edison, Ian, and William.
         </Section>
-        <Section title="Step One">
-          Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-          screen and then come back to see your edits.
-        </Section>
-        <Section title="See Your Changes">
-          <ReloadInstructions />
-        </Section>
-        <Section title="Debug">
-          <DebugInstructions />
-        </Section>
-        <Section title="Button">
-          <TouchableOpacity visionos_hoverEffect="lift" onPress={handlePress}>
-            <Text>Click me</Text>
+        <Section title="Memories">
+        <View style={styles.wrapContainer}>
+        {images.map((item) => (
+          <TouchableOpacity key={item.id} onPress={() => handlePress(item.url)} style={styles.touchable}>
+            <Image source={{uri: item.uri}} style={styles.image} />
+            <Text style={styles.text}>Click me</Text>
           </TouchableOpacity>
+        ))}
+      </View>
         </Section>
         
       </View>
@@ -99,6 +99,27 @@ const styles = StyleSheet.create({
   },
   highlight: {
     fontWeight: '700',
+  },
+  scrollViewContainer: {
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  wrapContainer: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+  },
+  touchable: {
+    margin: 10,
+    alignItems: 'center',
+  },
+  image: {
+    width: 300,
+    height: 300,
+  },
+  text: {
+    marginTop: 5,
+    color: '#000',
   },
 });
 
