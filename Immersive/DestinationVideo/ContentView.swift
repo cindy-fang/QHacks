@@ -124,14 +124,14 @@ struct ContentView: View {
                 }
             }
             if showIO {
-                Model3D(named: "Io_1_3643") { model in
+                Model3D(named: "rubixcube") { model in
                     model
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .scaleEffect(1.5)
+                        .scaleEffect(1)
                         .phaseAnimator([false, true]) { AirPodsMax, threeDYRotate in
                             AirPodsMax
-                                .rotation3DEffect(.degrees(threeDYRotate ? 0 : -1200), axis: (x: 0.1, y: 0.1, z: 0.1))
+                                .rotation3DEffect(.degrees(threeDYRotate ? 0 : -1200), axis: (x: 0, y: 0.1, z: 0))
                         } animation: { threeDYRotate in
                                 .spring(duration: 8).repeatForever(autoreverses: false)
                         }
@@ -163,10 +163,14 @@ struct ContentView: View {
                         Button("Toggle CSE Duck") {
                             showBattleSpaceship.toggle()
                         }
-                        Button("Toggle LemonMeringuePie") {
+                        Button("Toggle National Bank Rubix Cube") {
+                            showIO.toggle()
+                        }
+                        Button("Toggle Lemon Meringue Pie") {
                             showAirPodsMax.toggle()
                         }
-                        Button("Toggle AirForce") {
+                        
+                        Button("Toggle Air Force") {
                             showAirForce.toggle()
                         }
                         Button("Toggle FruitCake") {
@@ -179,9 +183,7 @@ struct ContentView: View {
                             showIgnition.toggle()
                         }
 
-                        Button("Toggle IO") {
-                            showIO.toggle()
-                        }
+                        
                         
                     }
                     
