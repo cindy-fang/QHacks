@@ -65,8 +65,8 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
-    background: #FF4820;
-    border: 2px solid #FF4820;
+    background: #bf7e70;
+    border: 2px solid #bf7e70;
     padding: 0 1rem;
     color: #fff;
     cursor: pointer;
@@ -81,14 +81,44 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 55px;
     margin-bottom: 55px;
+}
+
+.banner button {
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 60px;
+    letter-spacing: 0.8px;
+    display: flex;
+    align-items: center;
 }
 
 .eyetunes__header-image img {
     width: 80%;
     height: auto;
+    animation: fadeInOut 3s ease-in-out infinite;
+
 }
 
+/* Define the animation */
+@keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  /* Apply the animation to the image */
+  .banner img {
+    animation: fadeInOut 3s ease-in-out infinite;
+  }
 @media screen and (max-width: 1050px) {
     .eyetunes__header {
         flex-direction: column;

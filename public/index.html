@@ -7,11 +7,11 @@
   <meta name="theme-color" content="#000000" />
   <meta
     name="description"
-    content="Web site created using create-react-app"
+    content="EyeRemember everything"
   />
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <title>React App</title>
+  <title>EyeRemember</title>
   <style>
     /* Container for login and logout buttons */
     .button-container {
@@ -52,7 +52,7 @@
     <!-- Login Button -->
     <button id="login" class="login-button">Login</button>
     <!-- Logout Button -->
-    <button id="logout" class="logout-button">Logout</button>
+    <!-- <button id="logout" class="logout-button">Logout</button> -->
   </div>
 
   <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js"></script>
@@ -78,11 +78,11 @@
         window.history.replaceState({}, document.title, "/");
       }
 
-      const logoutButton = document.getElementById("logout");
-      logoutButton.addEventListener("click", (e) => {
-        e.preventDefault();
-        auth0Client.logout();
-      });
+      // const logoutButton = document.getElementById("logout");
+      // logoutButton.addEventListener("click", (e) => {
+      //   e.preventDefault();
+      //   auth0Client.logout();
+      // });
 
       const isAuthenticated = await auth0Client.isAuthenticated();
       const userProfile = await auth0Client.getUser();
