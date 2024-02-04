@@ -43,15 +43,15 @@ struct ContentView: View {
         default:
             // Show the app's content library by default.
             if showBattleSpaceship {
-                Model3D(named: "Earth_1_12756") { model in
+                Model3D(named: "duck") { model in
                     model
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .scaleEffect(1.5)
+                        .scaleEffect(1)
                         .opacity(1.0) // Ensure full opacity
                         .phaseAnimator([false, true]) { AirPodsMax, threeDYRotate in
                             AirPodsMax
-                                .rotation3DEffect(.degrees(threeDYRotate ? 0 : -1200), axis: (x: 0.1, y: 0.1, z: 0.1))
+                                .rotation3DEffect(.degrees(threeDYRotate ? 0 : -1200), axis: (x: 0, y: 0.1, z: 0))
                         } animation: { threeDYRotate in
                                 .spring(duration: 4).repeatForever(autoreverses: false)
                         }
@@ -160,6 +160,9 @@ struct ContentView: View {
 
                     Text("3D Collectibles")
                     HStack {
+                        Button("Toggle CSE Duck") {
+                            showBattleSpaceship.toggle()
+                        }
                         Button("Toggle LemonMeringuePie") {
                             showAirPodsMax.toggle()
                         }
@@ -179,9 +182,7 @@ struct ContentView: View {
                         Button("Toggle IO") {
                             showIO.toggle()
                         }
-                        Button("Toggle Earth") {
-                            showBattleSpaceship.toggle()
-                        }
+                        
                     }
                     
                 
