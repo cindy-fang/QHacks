@@ -32,6 +32,22 @@ struct ContentView: View {
         }
     
     var body: some View {
+        if showPancakes {
+            Model3D(named: "ian") { model in
+                model
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .scaleEffect(1)
+                    .phaseAnimator([false, true]) { AirPodsMax, threeDYRotate in
+                        AirPodsMax
+                            .rotation3DEffect(.degrees(threeDYRotate ? 0 : -1200), axis: (x: 0, y: 0, z: 0.1))
+                    } animation: { threeDYRotate in
+                            .spring(duration: 8).repeatForever(autoreverses: false)
+                    }
+            } placeholder: {
+                ProgressView()
+            }
+        }
         #if os(visionOS)
         switch player.presentation {
         case .fullWindow:
@@ -91,22 +107,7 @@ struct ContentView: View {
                     ProgressView()
                 }
             }
-            if showPancakes {
-                Model3D(named: "FruitCakeSlice") { model in
-                    model
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .scaleEffect(0.5)
-                        .phaseAnimator([false, true]) { AirPodsMax, threeDYRotate in
-                            AirPodsMax
-                                .rotation3DEffect(.degrees(threeDYRotate ? 0 : -1200), axis: (x: 0, y: 0.1, z: 0))
-                        } animation: { threeDYRotate in
-                                .spring(duration: 8).repeatForever(autoreverses: false)
-                        }
-                } placeholder: {
-                    ProgressView()
-                }
-            }
+            
             if showToyBiplane {
                 Model3D(named: "toy_biplane_idle") { model in
                     model
@@ -173,7 +174,7 @@ struct ContentView: View {
                         Button("Toggle Duck Army") {
                             showAirForce.toggle()
                         }
-                        Button("Toggle FruitCake") {
+                        Button("Toggle Ian") {
                             showPancakes.toggle()
                         }
                         Button("Toggle Toy Biplane") {

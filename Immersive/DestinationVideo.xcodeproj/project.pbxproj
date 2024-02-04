@@ -25,6 +25,7 @@
 		3453AC642B6F895D007ABBC7 /* cindy.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3453AC632B6F895D007ABBC7 /* cindy.usdz */; };
 		3453AC662B6F8C93007ABBC7 /* duckarmy.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3453AC652B6F8C93007ABBC7 /* duckarmy.usdz */; };
 		3453AC682B6F90AB007ABBC7 /* redbull.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3453AC672B6F90AB007ABBC7 /* redbull.usdz */; };
+		3453AC6C2B6F96BB007ABBC7 /* ian.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3453AC6B2B6F96BB007ABBC7 /* ian.usdz */; };
 		C417BE482A2EDFE700C8B9CA /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C417BE472A2EDFE700C8B9CA /* GradientView.swift */; };
 		C41945872A2D9C9C00D0E9BC /* WideDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41945862A2D9C9C00D0E9BC /* WideDetailView.swift */; };
 		C4280E352A16D578005475E1 /* VideoExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4280E342A16D578005475E1 /* VideoExtensions.swift */; };
@@ -76,6 +77,7 @@
 		3453AC632B6F895D007ABBC7 /* cindy.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = cindy.usdz; sourceTree = "<group>"; };
 		3453AC652B6F8C93007ABBC7 /* duckarmy.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = duckarmy.usdz; sourceTree = "<group>"; };
 		3453AC672B6F90AB007ABBC7 /* redbull.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = redbull.usdz; path = ../../../../../Downloads/redbull.usdz; sourceTree = "<group>"; };
+		3453AC6B2B6F96BB007ABBC7 /* ian.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = ian.usdz; sourceTree = "<group>"; };
 		3D967E9B031C16A162B2B54A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		46AC02AEC4E46201C147C698 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		C417BE472A2EDFE700C8B9CA /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				3453AC562B6F7E28007ABBC7 /* toy_drummer_idle.usdz */,
 				3453AC432B6F6F46007ABBC7 /* Airpods_Max.usdz */,
 				3453AC452B6F6F47007ABBC7 /* Earth_1_12756.usdz */,
+				3453AC6B2B6F96BB007ABBC7 /* ian.usdz */,
 				3453AC442B6F6F47007ABBC7 /* ignition.usdz */,
 				3453AC462B6F6F47007ABBC7 /* Io_1_3643.usdz */,
 				3453AC482B6F6F47007ABBC7 /* kulaklıksketchfab.usdz */,
@@ -377,6 +380,7 @@
 				3453AC4B2B6F6F47007ABBC7 /* AirForce.usdz in Resources */,
 				3453AC682B6F90AB007ABBC7 /* redbull.usdz in Resources */,
 				C4BFEB662A13FFDB0029E58F /* Videos.json in Resources */,
+				3453AC6C2B6F96BB007ABBC7 /* ian.usdz in Resources */,
 				3453AC522B6F6F47007ABBC7 /* pancakes.usdz in Resources */,
 				C45535A429EEFE3100A750E8 /* Preview Assets.xcassets in Resources */,
 				C45535A029EEFE3100A750E8 /* Assets.xcassets in Resources */,
