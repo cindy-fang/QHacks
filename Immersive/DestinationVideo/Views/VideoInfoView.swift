@@ -14,7 +14,6 @@ struct VideoInfoView: View {
                 .font(isVision ? .title : .title2)
                 .padding(.bottom, 4)
             InfoLineView(year: video.info.releaseYear,
-                         rating: video.info.contentRating,
                          duration: video.info.duration)
                 .padding([.bottom], 4)
             GenreView(genres: video.info.genres)
@@ -36,11 +35,10 @@ struct VideoInfoView: View {
 /// A view that displays a horizontal list of the video's year, rating, and duration.
 struct InfoLineView: View {
     let year: String
-    let rating: String
     let duration: String
     var body: some View {
         HStack {
-            Text("\(year) | \(rating) | \(duration)")
+            Text("\(year) | \(duration)")
                 .font(isTV ? .caption : .subheadline.weight(.medium))
         }
     }

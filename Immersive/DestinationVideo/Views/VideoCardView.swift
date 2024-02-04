@@ -77,7 +77,6 @@ struct VideoCardView: View {
                 image
                 VStack(alignment: .leading) {
                     InfoLineView(year: video.info.releaseYear,
-                                 rating: video.info.contentRating,
                                  duration: video.info.duration)
                     .foregroundStyle(.secondary)
                     .padding(.top, -10)
@@ -91,9 +90,6 @@ struct VideoCardView: View {
                     #endif
                         .lineLimit(2)
                     Spacer()
-                    HStack {
-                        GenreView(genres: video.info.genres)
-                    }
                 }
                 .padding(20)
             }
