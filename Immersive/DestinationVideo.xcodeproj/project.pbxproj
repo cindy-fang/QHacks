@@ -45,7 +45,7 @@
 		C417BE472A2EDFE700C8B9CA /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		C41945862A2D9C9C00D0E9BC /* WideDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WideDetailView.swift; sourceTree = "<group>"; };
 		C4280E342A16D578005475E1 /* VideoExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoExtensions.swift; sourceTree = "<group>"; };
-		C4462E7129AAAB2E00E3C854 /* Destination Video.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Destination Video.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4462E7129AAAB2E00E3C854 /* EyeRemember.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Destination Video.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C455357629EEFE3100A750E8 /* DestinationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationView.swift; sourceTree = "<group>"; };
 		C455357729EEFE3100A750E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C455357929EEFE3100A750E8 /* VideoWatchingActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoWatchingActivity.swift; sourceTree = "<group>"; };
@@ -136,7 +136,7 @@
 		C4462E7229AAAB2E00E3C854 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C4462E7129AAAB2E00E3C854 /* Destination Video.app */,
+				C4462E7129AAAB2E00E3C854 /* EyeRemember.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -269,7 +269,7 @@
 			);
 			name = DestinationVideo;
 			productName = DestinationTheatre;
-			productReference = C4462E7129AAAB2E00E3C854 /* Destination Video.app */;
+			productReference = C4462E7129AAAB2E00E3C854 /* EyeRemember.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -489,7 +489,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DestinationVideo/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Destination Video";
+				INFOPLIST_KEY_CFBundleDisplayName = "EyeRemember";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -508,7 +508,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.DestinationVideo${SAMPLE_CODE_DISAMBIGUATOR}";
-				PRODUCT_NAME = "Destination Video";
+				PRODUCT_NAME = "EyeRemember";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator xros xrsimulator";
@@ -540,7 +540,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DestinationVideo/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Destination Video";
+				INFOPLIST_KEY_CFBundleDisplayName = "EyeRemember";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -559,7 +559,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.DestinationVideo${SAMPLE_CODE_DISAMBIGUATOR}";
-				PRODUCT_NAME = "Destination Video";
+				PRODUCT_NAME = "EyeRemember";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator xros xrsimulator";
