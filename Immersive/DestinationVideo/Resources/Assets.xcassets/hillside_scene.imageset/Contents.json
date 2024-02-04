@@ -1,8 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "hillside_scene.png",
-      "idiom" : "universal"
+      "filename" : "dog.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {

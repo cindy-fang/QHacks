@@ -2,7 +2,7 @@
     {
         "id": 1,
         "url" : "https://cdn.discordapp.com/attachments/1183063448188362823/1203358218651443211/IMG_7014.mov?ex=65d0cdac&is=65be58ac&hm=8675947ff9da217b90272adcc37af2cf8190514d87e787268354b2ebcb1c1111&",
-        "title": "Skipping Rocks",
+        "title": "Cindy skips Rocks",
         "image_name": "beach",
         "description": "Cindy learns to skip rocks for the first time!",
         "destination": "beach",
@@ -70,10 +70,10 @@
     },
     {
         "id": 5,
-        "url" : "http://playgrounds-cdn.apple.com/assets/creek/index.m3u8",
-        "title": "Mystery Creek",
+        "url" : "https://cdn.discordapp.com/attachments/1183063448188362823/1203609545453084732/Coldplay_-_A_Sky_Full_Of_Stars_Live_at_River_Plate.mp4?ex=65d1b7bd&is=65bf42bd&hm=9aaab0e3d56e855ab9b2ab218b4f0aa1546c14f428eb8167b7bbd063bb0088ae&",
+        "title": "Coldplay Concert",
         "image_name": "creek",
-        "description": "A mystery is brewing on a rainy Wednesday in California, as a couple of friends head to a local campsite for a weekend in the woods. They never anticipated what could be living down by the trickling, rocky creek.",
+        "description": "Favorite concert of all times!",
         "destination": "creek",
         "info": {
             "releaseYear": "2023",
@@ -87,10 +87,10 @@
     },
     {
         "id": 6,
-        "url" : "http://playgrounds-cdn.apple.com/assets/hillside/index.m3u8",
-        "title": "The Rolling Hills",
+        "url" : "https://cdn.discordapp.com/attachments/1118633568046960651/1203607391254487090/IMG_8303.mov?ex=65d1b5bc&is=65bf40bc&hm=ef93dc8e8e85a3f8df63d30f4204702793efc47d80bf6d589b6925ddf4fde6ef&",
+        "title": "QHacks Therapy Dogs",
         "image_name": "hillside",
-        "description": "Discover the beauty beyond the highway, just steps away from your normal commute. What lies beyond is a stunning show of delicate fog rolling over the hillside.",
+        "description": "Cute therapy dog saved the day!",
         "destination": "hillside",
         "info": {
             "releaseYear": "2023",

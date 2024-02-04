@@ -1,8 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "creek_landscape.png",
-      "idiom" : "universal"
+      "filename" : "coldplayConcert.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {
