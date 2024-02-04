@@ -32,7 +32,7 @@ struct AirPodsMaxAnimation: View {
                             AirPodsMax
                                 .rotation3DEffect(.degrees(threeDYRotate ? 0 : -1200), axis: (x: 0.1, y: 0.1, z: 0.1))
                         } animation: { threeDYRotate in
-                                .linear(duration: 4).repeatForever(autoreverses: false)
+                                .spring(duration: 4).repeatForever(autoreverses: false)
                         }
                 } placeholder: {
                     ProgressView()
@@ -48,7 +48,7 @@ struct AirPodsMaxAnimation: View {
                             AirPodsMax
                                 .rotation3DEffect(.degrees(threeDYRotate ? 0 : -1200), axis: (x: 0.1, y: 0.1, z: 0.1))
                         } animation: { threeDYRotate in
-                                .linear(duration: 8).repeatForever(autoreverses: false)
+                                .spring(duration: 8).repeatForever(autoreverses: false)
                         }
                 } placeholder: {
                     ProgressView()
@@ -59,12 +59,12 @@ struct AirPodsMaxAnimation: View {
                     model
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .scaleEffect(0.3)
+                        .scaleEffect(1)
                         .phaseAnimator([false, true]) { AirPodsMax, threeDYRotate in
                             AirPodsMax
                                 .rotation3DEffect(.degrees(threeDYRotate ? 0 : -1200), axis: (x: 0.1, y: 0.1, z: 0.1))
                         } animation: { threeDYRotate in
-                                .linear(duration: 8).repeatForever(autoreverses: false)
+                                .spring(duration: 8).repeatForever(autoreverses: false)
                         }
                 } placeholder: {
                     ProgressView()
@@ -75,12 +75,12 @@ struct AirPodsMaxAnimation: View {
                     model
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .scaleEffect(0.3)
+                        .scaleEffect(0.5)
                         .phaseAnimator([false, true]) { AirPodsMax, threeDYRotate in
                             AirPodsMax
                                 .rotation3DEffect(.degrees(threeDYRotate ? 0 : -1200), axis: (x: 0.1, y: 0.1, z: 0.1))
                         } animation: { threeDYRotate in
-                                .linear(duration: 8).repeatForever(autoreverses: false)
+                                .spring(duration: 8).repeatForever(autoreverses: false)
                         }
                 } placeholder: {
                     ProgressView()
@@ -96,7 +96,7 @@ struct AirPodsMaxAnimation: View {
                             AirPodsMax
                                 .rotation3DEffect(.degrees(threeDYRotate ? 0 : -1200), axis: (x: 0.1, y: 0.1, z: 0.1))
                         } animation: { threeDYRotate in
-                                .linear(duration: 8).repeatForever(autoreverses: false)
+                                .spring(duration: 8).repeatForever(autoreverses: false)
                         }
                 } placeholder: {
                     ProgressView()
@@ -112,7 +112,7 @@ struct AirPodsMaxAnimation: View {
                             AirPodsMax
                                 .rotation3DEffect(.degrees(threeDYRotate ? 0 : -1200), axis: (x: 0.1, y: 0.1, z: 0.1))
                         } animation: { threeDYRotate in
-                                .linear(duration: 8).repeatForever(autoreverses: false)
+                                .spring(duration: 8).repeatForever(autoreverses: false)
                         }
                 } placeholder: {
                     ProgressView()
@@ -128,7 +128,7 @@ struct AirPodsMaxAnimation: View {
                             AirPodsMax
                                 .rotation3DEffect(.degrees(threeDYRotate ? 0 : -1200), axis: (x: 0.1, y: 0.1, z: 0.1))
                         } animation: { threeDYRotate in
-                                .linear(duration: 8).repeatForever(autoreverses: false)
+                                .spring(duration: 8).repeatForever(autoreverses: false)
                         }
                 } placeholder: {
                     ProgressView()

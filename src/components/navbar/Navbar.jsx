@@ -16,10 +16,6 @@ const Navbar = () => {
           <p><a href="#info">EyeTunes</a></p>
         </div>
       </div>
-      <div className="eyetunes__navbar-sign">
-        <p>Sign in</p>
-        <button type="button">Sign up</button>
-      </div>
       <div className="eyetunes__navbar-menu">
         {toggleMenu
           ? <RiCloseLine color="#fff" size={27} onClick={() => setToggleMenu(false)} />
@@ -29,10 +25,6 @@ const Navbar = () => {
           <div className="eyetunes__navbar-menu_container-links">
             <p><a href="#home">Home</a></p>
             <p><a href="#info">EyeTunes</a></p>
-          </div>
-          <div className="eyetunes__navbar-menu_container-links-sign">
-          <p>Sign in</p>
-            <button type="button">Sign up</button>
           </div>
         </div>
         )}
