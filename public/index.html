@@ -1,27 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    
-    <div style="position: fixed; bottom: 20px; padding-bottom: 10px; display: flex; justify-content: center; align-items: flex-end; left: 0; right: 0;">
-      <button id="login" style="background: var(--chakra-colors-gray-200); align-items: center; -webkit-box-pack: center; user-select: none; position: relative; white-space: nowrap; vertical-align: middle; outline: 2px solid transparent; outline-offset: 2px; line-height: 1.2; border-radius: var(--chakra-radii-md); font-weight: var(--chakra-fontWeights-semibold); transition-property: var(--chakra-transition-property-common); transition-duration: var(--chakra-transition-duration-normal); height: var(--chakra-sizes-10); min-width: var(--chakra-sizes-10); font-size: var(--chakra-fontSizes-md); padding: 10px; margin-right: 80px;">Login</button>
-      <button id="logout" style="background: var(--chakra-colors-gray-200); align-items: center; -webkit-box-pack: center; user-select: none; position: relative; white-space: nowrap; vertical-align: middle; outline: 2px solid transparent; outline-offset: 2px; line-height: 1.2; border-radius: var(--chakra-radii-md); font-weight: var(--chakra-fontWeights-semibold); transition-property: var(--chakra-transition-property-common); transition-duration: var(--chakra-transition-duration-normal); height: var(--chakra-sizes-10); min-width: var(--chakra-sizes-10); font-size: var(--chakra-fontSizes-md); padding: 10px;">Logout</button>
-    </div>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta
+    name="description"
+    content="Web site created using create-react-app"
+  />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <title>React App</title>
+  <style>
+    /* Container for login and logout buttons */
+    .button-container {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      align-items: center; /* Center items vertically */
+    }
+
+    /* Style for both buttons */
+    .login-button,
+    .logout-button {
+      padding: 0.5rem 1rem;
+      color: #fff;
+      background: transparent;
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 25px;
+      border: 2px solid #fff; /* White border */
+      outline: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    /* Margin between login and logout buttons */
+    .logout-button {
+      margin-left: 0.5rem; /* Adjust the margin as needed */
+    }
+  </style>
+</head>
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+
+  <div class="button-container">
+    <!-- Login Button -->
+    <button id="login" class="login-button">Login</button>
+    <!-- Logout Button -->
+    <button id="logout" class="logout-button">Logout</button>
+  </div>
 
   <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js"></script>
 
@@ -70,4 +102,5 @@
       }
     });
   </script>
+</body>
 </html>
