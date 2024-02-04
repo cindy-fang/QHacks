@@ -1,62 +1,62 @@
 [
     {
         "id": 1,
-        "url" : "http://playgrounds-cdn.apple.com/assets/beach/index.m3u8",
-        "title": "A Beach",
+        "url" : "https://cdn.discordapp.com/attachments/1183063448188362823/1203358218651443211/IMG_7014.mov?ex=65d0cdac&is=65be58ac&hm=8675947ff9da217b90272adcc37af2cf8190514d87e787268354b2ebcb1c1111&",
+        "title": "Skipping Rocks",
         "image_name": "beach",
-        "description": "From an award-winning producer and actor, \"A Beach\" is a sweeping, awe-inspiring drama depicting waves crashing on a scenic California beach. Sit back and enjoy the sweet sounds of the ocean while relaxing on a soft, sandy beach.",
+        "description": "Cindy learns to skip rocks for the first time!",
         "destination": "beach",
         "info": {
             "releaseYear": "2023",
             "contentRating": "NR",
-            "duration": "1m 1s",
-            "genres": ["Drama", "Romance"],
-            "directors": ["M. Seagull"],
-            "writers": ["R. Rock", "G. Seaglass"],
-            "stars": ["N. Sand", "P. Sky", "J. Sun", "L. Windy"]
+            "duration": "23s",
+            "genres": ["Documentary"],
+            "directors": ["S. Dandy", "V. Sunny"],
+            "writers": ["G. Grass", "A. Cloud"],
+            "stars": ["B. Misty", "R. Hill"]
         }
     },
     {
         "id": 2,
-        "url" : "http://playgrounds-cdn.apple.com/assets/lake/index.m3u8",
-        "title": "By the Lake",
+        "url" : "https://cdn.discordapp.com/attachments/1183063448188362823/1203358122341695498/IMG_1240.mov?ex=65d0cd95&is=65be5895&hm=2729846611717253e16f6dfd1967b5062482508dcf34d354cfffaa8fcc4e6045&",
+        "title": "Feeding Ducks",
         "image_name": "lake",
-        "description": "The battle for the sunniest spot continues, as a group of turtles take their positions on the log. Find out who the last survivor is, and who must swim away cold.",
+        "description": "William feeds ducks on the shores of Lake Ontario!",
         "destination": "lake",
         "info": {
             "releaseYear": "2023",
             "contentRating": "NR",
-            "duration": "19s",
-            "genres": ["Comedy", "Action"],
-            "directors": ["D. Lily"],
-            "writers": ["Z. Splash"],
-            "stars": ["M. Turtle", "K. Green"]
+            "duration": "23s",
+            "genres": ["Documentary"],
+            "directors": ["S. Dandy", "V. Sunny"],
+            "writers": ["G. Grass", "A. Cloud"],
+            "stars": ["B. Misty", "R. Hill"]
         }
     },
     {
         "id": 3,
-        "url" : "http://playgrounds-cdn.apple.com/assets/camping/index.m3u8",
-        "title": "Camping in the Woods",
+        "url" : "https://cdn.discordapp.com/attachments/1183063448188362823/1203587951401893918/IMG_7017.mov?ex=65d1a3a1&is=65bf2ea1&hm=5c07fa6eb7ef5ea79a8ebd0c814df4fa51fa1aee2d84619b7340cf67f98bd384&",
+        "title": "Galaxia Skips Rocks",
         "image_name": "camping",
-        "description": "Come along for a journey of epic proportion as the perfect camp site is discovered. Listen to the magical wildlife and feel the gentle breeze of the wind as you watch the daisies dance in the field of flowers.",
+        "description": "Galaxia skips rocks at Lake Ontario!",
         "destination": "camping",
         "info": {
             "releaseYear": "2023",
             "contentRating": "NR",
-            "duration": "28s",
-            "genres": ["Action", "Adventure"],
-            "directors": ["O. Poppy"],
-            "writers": ["T. Daisy"],
-            "stars": ["S. Sticks", "F. Log", "A. Tent"]
+            "duration": "23s",
+            "genres": ["Documentary"],
+            "directors": ["S. Dandy", "V. Sunny"],
+            "writers": ["G. Grass", "A. Cloud"],
+            "stars": ["B. Misty", "R. Hill"]
         }
     },
 
     {
         "id": 4,
-        "url" : "http://playgrounds-cdn.apple.com/assets/park/index.m3u8",
-        "title": "Birds in the Park",
+        "url" : "https://cdn.discordapp.com/attachments/1118633568046960651/1203211682864828416/IMG_8263.mov?ex=65d04533&is=65bdd033&hm=f4354c94df8923bea0d26a417dda1bcc0322687832c3a992cb2a9c3b1facbd1d&",
+        "title": "QHacks Karaoke",
         "image_name": "park",
-        "description": "On a dreamy spring day near the California hillside, some friendly little birds flutter about, hopping from stalk to stalk munching on some tasty seeds. Listen to them chatter as they go about their busy afternoon.",
+        "description": "Cindy and William doing karaoke at QHacks!!",
         "destination": "park",
         "info": {
             "releaseYear": "2023",
