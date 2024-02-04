@@ -179,7 +179,22 @@ struct AirPodsMaxAnimation: View {
                                 }
                              
                     }
-                    
+                    Text("Memories!")
+                    HStack {
+                        Button(action: {
+                                    // Call the function and pass the URL as a parameter
+                                    openURL(urlString: "https://cdn.discordapp.com/attachments/1183063448188362823/1203358218651443211/IMG_7014.mov?ex=65d0cdac&is=65be58ac&hm=8675947ff9da217b90272adcc37af2cf8190514d87e787268354b2ebcb1c1111&")
+                                }) {
+                                    // Use HStack for horizontal layout or VStack for vertical layout
+                                    HStack {
+                                        Image("coldplay") // System image
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fit)
+                                            .frame(width: 100, height: 100)
+                                    }
+                                }
+                             
+                    }
                 }
                 .navigationTitle("Welcome to EyeTunes!")
                 .toolbar {
