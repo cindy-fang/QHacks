@@ -40,7 +40,7 @@
 .eyetunes__features-container_feature-text p {
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 24px;
     color: var(--color-text);
 }

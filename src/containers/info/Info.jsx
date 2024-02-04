@@ -11,9 +11,9 @@ const Info = () => (
       <h1 className="gradient__text">The memories are beyond your pictures</h1>
     </div>
     <div className="eyetunes__info-container">
-      <Feature title="Feature 1" text="plenty of consent " />
-      <Feature title="Feature 2" text="plenty of consent" />
-      <Feature title="Feature 3" text="I am going to EAT" />
+      <Feature title="Preserving 3D Objects" text="plenty of consent " />
+      <Feature title="Preserving Video" text="plenty of consent" />
+      <Feature title="Preserving Audio" text="I am going to EAT" />
     </div>
   </div>
 );

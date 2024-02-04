@@ -17,7 +17,7 @@
 .eyetunes__footer-heading h1 {
     font-family: var(--font-family);
     font-weight: 800;
-    font-size: 64px;
+    font-size: 35px;
     line-height: 75px;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .eyetunes__footer-btn p {
-    font-size: 18px;
+    font-size: 15px;
     font-family: var(--font-family);
     line-height: 21px;
     color: #fff;
