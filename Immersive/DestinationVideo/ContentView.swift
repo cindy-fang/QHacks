@@ -6,9 +6,18 @@ A view that presents the app's user interface.
 */
 
 import SwiftUI
+import RealityKit
+import Combine
 
 // The app uses `LibraryView` as its main UI.
 struct ContentView: View {
+    @State private var showAirPodsMax = false
+    @State private var showAirForce = false
+    @State private var showPancakes = false
+    @State private var showToyBiplane = false
+    @State private var showBattleSpaceship = false
+    @State private var showIO = false
+    @State private var showIgnition = false
     
     /// The library's selection path.
     @State private var navigationPath = [Video]()
@@ -28,6 +37,40 @@ struct ContentView: View {
                 }
         default:
             // Show the app's content library by default.
+            if showToyBiplane {
+                Model3D(named: "toy_biplane_idle") { model in
+                    model
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .scaleEffect(0.3)
+                        .phaseAnimator([false, true]) { AirPodsMax, threeDYRotate in
+                            AirPodsMax
+                                .rotation3DEffect(.degrees(threeDYRotate ? 0 : -1200), axis: (x: 0.1, y: 0.1, z: 0.1))
+                        } animation: { threeDYRotate in
+                                .spring(duration: 8).repeatForever(autoreverses: false)
+                        }
+                } placeholder: {
+                    ProgressView()
+                }
+            }
+            Text("Collectibles")
+            HStack {
+                Button("Toggle AirPods Max") {
+                    showAirPodsMax.toggle()
+                }
+                Button("Toggle AirForce") {
+                    showAirForce.toggle()
+                }
+                Button("Toggle Pancakes") {
+                    showPancakes.toggle()
+                }
+                Button("Toggle Toy Biplane") {
+                    showToyBiplane.toggle()
+                }
+                Button("Toggle ignition") {
+                    showIgnition.toggle()
+                }
+            }
             LibraryView(path: $navigationPath, isPresentingSpace: $isPresentingSpace)
         }
         #else
