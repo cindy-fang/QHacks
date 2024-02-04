@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		3453AC402B6F6992007ABBC7 /* toy_biplane_idle.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3453AC3F2B6F6992007ABBC7 /* toy_biplane_idle.usdz */; };
+		3453AC4B2B6F6F47007ABBC7 /* AirForce.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3453AC422B6F6F46007ABBC7 /* AirForce.usdz */; };
+		3453AC4C2B6F6F47007ABBC7 /* Airpods_Max.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3453AC432B6F6F46007ABBC7 /* Airpods_Max.usdz */; };
+		3453AC4D2B6F6F47007ABBC7 /* ignition.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3453AC442B6F6F47007ABBC7 /* ignition.usdz */; };
+		3453AC4E2B6F6F47007ABBC7 /* Earth_1_12756.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3453AC452B6F6F47007ABBC7 /* Earth_1_12756.usdz */; };
+		3453AC4F2B6F6F47007ABBC7 /* Io_1_3643.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3453AC462B6F6F47007ABBC7 /* Io_1_3643.usdz */; };
+		3453AC502B6F6F47007ABBC7 /* Airpods_Max_Pink.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3453AC472B6F6F47007ABBC7 /* Airpods_Max_Pink.usdz */; };
+		3453AC512B6F6F47007ABBC7 /* kulaklıksketchfab.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3453AC482B6F6F47007ABBC7 /* kulaklıksketchfab.usdz */; };
+		3453AC522B6F6F47007ABBC7 /* pancakes.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3453AC492B6F6F47007ABBC7 /* pancakes.usdz */; };
 		C417BE482A2EDFE700C8B9CA /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C417BE472A2EDFE700C8B9CA /* GradientView.swift */; };
 		C41945872A2D9C9C00D0E9BC /* WideDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41945862A2D9C9C00D0E9BC /* WideDetailView.swift */; };
 		C4280E352A16D578005475E1 /* VideoExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4280E342A16D578005475E1 /* VideoExtensions.swift */; };
@@ -42,12 +50,20 @@
 
 /* Begin PBXFileReference section */
 		3453AC3F2B6F6992007ABBC7 /* toy_biplane_idle.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = toy_biplane_idle.usdz; path = ../../VisionOS/OpenvisionOS/AirPodsMax/toy_biplane_idle.usdz; sourceTree = "<group>"; };
+		3453AC422B6F6F46007ABBC7 /* AirForce.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = AirForce.usdz; path = ../../VisionOS/OpenvisionOS/AirPodsMax/AirForce.usdz; sourceTree = "<group>"; };
+		3453AC432B6F6F46007ABBC7 /* Airpods_Max.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Airpods_Max.usdz; path = ../../VisionOS/OpenvisionOS/AirPodsMax/Airpods_Max.usdz; sourceTree = "<group>"; };
+		3453AC442B6F6F47007ABBC7 /* ignition.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = ignition.usdz; path = ../../VisionOS/OpenvisionOS/AirPodsMax/ignition.usdz; sourceTree = "<group>"; };
+		3453AC452B6F6F47007ABBC7 /* Earth_1_12756.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Earth_1_12756.usdz; path = ../../VisionOS/OpenvisionOS/AirPodsMax/Earth_1_12756.usdz; sourceTree = "<group>"; };
+		3453AC462B6F6F47007ABBC7 /* Io_1_3643.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Io_1_3643.usdz; path = ../../VisionOS/OpenvisionOS/AirPodsMax/Io_1_3643.usdz; sourceTree = "<group>"; };
+		3453AC472B6F6F47007ABBC7 /* Airpods_Max_Pink.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Airpods_Max_Pink.usdz; path = ../../VisionOS/OpenvisionOS/AirPodsMax/Airpods_Max_Pink.usdz; sourceTree = "<group>"; };
+		3453AC482B6F6F47007ABBC7 /* kulaklıksketchfab.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = "kulaklıksketchfab.usdz"; path = "../../VisionOS/OpenvisionOS/AirPodsMax/kulaklıksketchfab.usdz"; sourceTree = "<group>"; };
+		3453AC492B6F6F47007ABBC7 /* pancakes.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = pancakes.usdz; path = ../../VisionOS/OpenvisionOS/AirPodsMax/pancakes.usdz; sourceTree = "<group>"; };
 		3D967E9B031C16A162B2B54A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		46AC02AEC4E46201C147C698 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		C417BE472A2EDFE700C8B9CA /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		C41945862A2D9C9C00D0E9BC /* WideDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WideDetailView.swift; sourceTree = "<group>"; };
 		C4280E342A16D578005475E1 /* VideoExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoExtensions.swift; sourceTree = "<group>"; };
-		C4462E7129AAAB2E00E3C854 /* EyeRemember.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Destination Video.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4462E7129AAAB2E00E3C854 /* Destination Video.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Destination Video.app"; path = EyeRemember.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C455357629EEFE3100A750E8 /* DestinationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationView.swift; sourceTree = "<group>"; };
 		C455357729EEFE3100A750E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C455357929EEFE3100A750E8 /* VideoWatchingActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoWatchingActivity.swift; sourceTree = "<group>"; };
@@ -138,7 +154,7 @@
 		C4462E7229AAAB2E00E3C854 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C4462E7129AAAB2E00E3C854 /* EyeRemember.app */,
+				C4462E7129AAAB2E00E3C854 /* Destination Video.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,6 +162,14 @@
 		C455357329EEFE3100A750E8 /* DestinationVideo */ = {
 			isa = PBXGroup;
 			children = (
+				3453AC422B6F6F46007ABBC7 /* AirForce.usdz */,
+				3453AC472B6F6F47007ABBC7 /* Airpods_Max_Pink.usdz */,
+				3453AC432B6F6F46007ABBC7 /* Airpods_Max.usdz */,
+				3453AC452B6F6F47007ABBC7 /* Earth_1_12756.usdz */,
+				3453AC442B6F6F47007ABBC7 /* ignition.usdz */,
+				3453AC462B6F6F47007ABBC7 /* Io_1_3643.usdz */,
+				3453AC482B6F6F47007ABBC7 /* kulaklıksketchfab.usdz */,
+				3453AC492B6F6F47007ABBC7 /* pancakes.usdz */,
 				3453AC3F2B6F6992007ABBC7 /* toy_biplane_idle.usdz */,
 				C455358729EEFE3100A750E8 /* DestinationVideo.swift */,
 				C455359629EEFE3100A750E8 /* ContentView.swift */,
@@ -272,7 +296,7 @@
 			);
 			name = DestinationVideo;
 			productName = DestinationTheatre;
-			productReference = C4462E7129AAAB2E00E3C854 /* EyeRemember.app */;
+			productReference = C4462E7129AAAB2E00E3C854 /* Destination Video.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -315,9 +339,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				3453AC402B6F6992007ABBC7 /* toy_biplane_idle.usdz in Resources */,
+				3453AC512B6F6F47007ABBC7 /* kulaklıksketchfab.usdz in Resources */,
+				3453AC4E2B6F6F47007ABBC7 /* Earth_1_12756.usdz in Resources */,
+				3453AC4C2B6F6F47007ABBC7 /* Airpods_Max.usdz in Resources */,
+				3453AC4D2B6F6F47007ABBC7 /* ignition.usdz in Resources */,
+				3453AC4F2B6F6F47007ABBC7 /* Io_1_3643.usdz in Resources */,
+				3453AC4B2B6F6F47007ABBC7 /* AirForce.usdz in Resources */,
 				C4BFEB662A13FFDB0029E58F /* Videos.json in Resources */,
+				3453AC522B6F6F47007ABBC7 /* pancakes.usdz in Resources */,
 				C45535A429EEFE3100A750E8 /* Preview Assets.xcassets in Resources */,
 				C45535A029EEFE3100A750E8 /* Assets.xcassets in Resources */,
+				3453AC502B6F6F47007ABBC7 /* Airpods_Max_Pink.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,7 +525,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DestinationVideo/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "EyeRemember";
+				INFOPLIST_KEY_CFBundleDisplayName = EyeRemember;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -512,7 +544,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.DestinationVideo${SAMPLE_CODE_DISAMBIGUATOR}";
-				PRODUCT_NAME = "EyeRemember";
+				PRODUCT_NAME = EyeRemember;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator xros xrsimulator";
@@ -544,7 +576,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DestinationVideo/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "EyeRemember";
+				INFOPLIST_KEY_CFBundleDisplayName = EyeRemember;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -563,7 +595,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.DestinationVideo${SAMPLE_CODE_DISAMBIGUATOR}";
-				PRODUCT_NAME = "EyeRemember";
+				PRODUCT_NAME = EyeRemember;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator xros xrsimulator";
