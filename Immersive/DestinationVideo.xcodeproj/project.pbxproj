@@ -16,6 +16,10 @@
 		3453AC502B6F6F47007ABBC7 /* Airpods_Max_Pink.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3453AC472B6F6F47007ABBC7 /* Airpods_Max_Pink.usdz */; };
 		3453AC512B6F6F47007ABBC7 /* kulaklıksketchfab.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3453AC482B6F6F47007ABBC7 /* kulaklıksketchfab.usdz */; };
 		3453AC522B6F6F47007ABBC7 /* pancakes.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3453AC492B6F6F47007ABBC7 /* pancakes.usdz */; };
+		3453AC572B6F7E28007ABBC7 /* Rock.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3453AC532B6F7E26007ABBC7 /* Rock.usdz */; };
+		3453AC582B6F7E28007ABBC7 /* FruitCakeSlice.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3453AC542B6F7E27007ABBC7 /* FruitCakeSlice.usdz */; };
+		3453AC592B6F7E28007ABBC7 /* LemonMeringuePie.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3453AC552B6F7E28007ABBC7 /* LemonMeringuePie.usdz */; };
+		3453AC5A2B6F7E28007ABBC7 /* toy_drummer_idle.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3453AC562B6F7E28007ABBC7 /* toy_drummer_idle.usdz */; };
 		C417BE482A2EDFE700C8B9CA /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C417BE472A2EDFE700C8B9CA /* GradientView.swift */; };
 		C41945872A2D9C9C00D0E9BC /* WideDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41945862A2D9C9C00D0E9BC /* WideDetailView.swift */; };
 		C4280E352A16D578005475E1 /* VideoExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4280E342A16D578005475E1 /* VideoExtensions.swift */; };
@@ -58,6 +62,10 @@
 		3453AC472B6F6F47007ABBC7 /* Airpods_Max_Pink.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Airpods_Max_Pink.usdz; path = ../../VisionOS/OpenvisionOS/AirPodsMax/Airpods_Max_Pink.usdz; sourceTree = "<group>"; };
 		3453AC482B6F6F47007ABBC7 /* kulaklıksketchfab.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = "kulaklıksketchfab.usdz"; path = "../../VisionOS/OpenvisionOS/AirPodsMax/kulaklıksketchfab.usdz"; sourceTree = "<group>"; };
 		3453AC492B6F6F47007ABBC7 /* pancakes.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = pancakes.usdz; path = ../../VisionOS/OpenvisionOS/AirPodsMax/pancakes.usdz; sourceTree = "<group>"; };
+		3453AC532B6F7E26007ABBC7 /* Rock.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Rock.usdz; sourceTree = "<group>"; };
+		3453AC542B6F7E27007ABBC7 /* FruitCakeSlice.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = FruitCakeSlice.usdz; sourceTree = "<group>"; };
+		3453AC552B6F7E28007ABBC7 /* LemonMeringuePie.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = LemonMeringuePie.usdz; sourceTree = "<group>"; };
+		3453AC562B6F7E28007ABBC7 /* toy_drummer_idle.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_drummer_idle.usdz; sourceTree = "<group>"; };
 		3D967E9B031C16A162B2B54A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		46AC02AEC4E46201C147C698 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		C417BE472A2EDFE700C8B9CA /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
@@ -164,6 +172,10 @@
 			children = (
 				3453AC422B6F6F46007ABBC7 /* AirForce.usdz */,
 				3453AC472B6F6F47007ABBC7 /* Airpods_Max_Pink.usdz */,
+				3453AC542B6F7E27007ABBC7 /* FruitCakeSlice.usdz */,
+				3453AC552B6F7E28007ABBC7 /* LemonMeringuePie.usdz */,
+				3453AC532B6F7E26007ABBC7 /* Rock.usdz */,
+				3453AC562B6F7E28007ABBC7 /* toy_drummer_idle.usdz */,
 				3453AC432B6F6F46007ABBC7 /* Airpods_Max.usdz */,
 				3453AC452B6F6F47007ABBC7 /* Earth_1_12756.usdz */,
 				3453AC442B6F6F47007ABBC7 /* ignition.usdz */,
@@ -343,6 +355,7 @@
 				3453AC4E2B6F6F47007ABBC7 /* Earth_1_12756.usdz in Resources */,
 				3453AC4C2B6F6F47007ABBC7 /* Airpods_Max.usdz in Resources */,
 				3453AC4D2B6F6F47007ABBC7 /* ignition.usdz in Resources */,
+				3453AC582B6F7E28007ABBC7 /* FruitCakeSlice.usdz in Resources */,
 				3453AC4F2B6F6F47007ABBC7 /* Io_1_3643.usdz in Resources */,
 				3453AC4B2B6F6F47007ABBC7 /* AirForce.usdz in Resources */,
 				C4BFEB662A13FFDB0029E58F /* Videos.json in Resources */,
@@ -350,6 +363,9 @@
 				C45535A429EEFE3100A750E8 /* Preview Assets.xcassets in Resources */,
 				C45535A029EEFE3100A750E8 /* Assets.xcassets in Resources */,
 				3453AC502B6F6F47007ABBC7 /* Airpods_Max_Pink.usdz in Resources */,
+				3453AC5A2B6F7E28007ABBC7 /* toy_drummer_idle.usdz in Resources */,
+				3453AC572B6F7E28007ABBC7 /* Rock.usdz in Resources */,
+				3453AC592B6F7E28007ABBC7 /* LemonMeringuePie.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

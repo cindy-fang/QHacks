@@ -76,14 +76,14 @@ struct ContentView: View {
                 }                    }
             
             if showAirPodsMax {
-                Model3D(named: "Airpods_Max_Pink") { model in
+                Model3D(named: "LemonMeringuePie") { model in
                     model
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .scaleEffect(1)
+                        .scaleEffect(0.7)
                         .phaseAnimator([false, true]) { AirPodsMax, threeDYRotate in
                             AirPodsMax
-                                .rotation3DEffect(.degrees(threeDYRotate ? 0 : -1200), axis: (x: 0.1, y: 0.1, z: 0.1))
+                                .rotation3DEffect(.degrees(threeDYRotate ? 0 : -1200), axis: (x: 0, y: 0.1, z: 0))
                         } animation: { threeDYRotate in
                                 .spring(duration: 8).repeatForever(autoreverses: false)
                         }
@@ -92,14 +92,14 @@ struct ContentView: View {
                 }
             }
             if showPancakes {
-                Model3D(named: "pancakes") { model in
+                Model3D(named: "FruitCakeSlice") { model in
                     model
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .scaleEffect(0.5)
                         .phaseAnimator([false, true]) { AirPodsMax, threeDYRotate in
                             AirPodsMax
-                                .rotation3DEffect(.degrees(threeDYRotate ? 0 : -1200), axis: (x: 0.1, y: 0.1, z: 0.1))
+                                .rotation3DEffect(.degrees(threeDYRotate ? 0 : -1200), axis: (x: 0, y: 0.1, z: 0))
                         } animation: { threeDYRotate in
                                 .spring(duration: 8).repeatForever(autoreverses: false)
                         }
@@ -140,7 +140,7 @@ struct ContentView: View {
                 }
             }
             if showIgnition {
-                Model3D(named: "ignition") { model in
+                Model3D(named: "Rock") { model in
                     model
                         .resizable()
                         .aspectRatio(contentMode: .fit)
@@ -160,19 +160,19 @@ struct ContentView: View {
 
                     Text("3D Collectibles")
                     HStack {
-                        Button("Toggle AirPods Max") {
+                        Button("Toggle LemonMeringuePie") {
                             showAirPodsMax.toggle()
                         }
                         Button("Toggle AirForce") {
                             showAirForce.toggle()
                         }
-                        Button("Toggle Pancakes") {
+                        Button("Toggle FruitCake") {
                             showPancakes.toggle()
                         }
                         Button("Toggle Toy Biplane") {
                             showToyBiplane.toggle()
                         }
-                        Button("Toggle ignition") {
+                        Button("Toggle Rock") {
                             showIgnition.toggle()
                         }
 
