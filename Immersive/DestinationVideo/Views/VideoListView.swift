@@ -101,7 +101,7 @@ struct VideoListView: View {
 
 #Preview("Full") {
     NavigationStack {
-        VideoListView(title: "Featured", videos: .all, cardStyle: .full, cardSpacing: 80)
+        VideoListView(title: "Memories", videos: .all, cardStyle: .full, cardSpacing: 80)
             .frame(height: 380)
     }
 }

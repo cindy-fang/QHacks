@@ -46,7 +46,7 @@ struct LibraryView: View {
                         .accessibilityHidden(true)
                     
                     // Displays a horizontally scrolling list of Featured videos.
-                    VideoListView(title: "Featured",
+                    VideoListView(title: "Memories",
                                   videos: library.videos,
                                   cardStyle: .full,
                                   cardSpacing: horizontalSpacing)
