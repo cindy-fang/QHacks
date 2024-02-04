@@ -26,6 +26,11 @@ struct ContentView: View {
     /// The app's player model.
     @Environment(PlayerModel.self) private var player
     
+    func openURL(urlString: String) {
+            guard let url = URL(string: urlString) else { return }
+            UIApplication.shared.open(url)
+        }
+    
     var body: some View {
         #if os(visionOS)
         switch player.presentation {
@@ -37,6 +42,71 @@ struct ContentView: View {
                 }
         default:
             // Show the app's content library by default.
+            if showBattleSpaceship {
+                Model3D(named: "Earth_1_12756") { model in
+                    model
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .scaleEffect(1.5)
+                        .opacity(1.0) // Ensure full opacity
+                        .phaseAnimator([false, true]) { AirPodsMax, threeDYRotate in
+                            AirPodsMax
+                                .rotation3DEffect(.degrees(threeDYRotate ? 0 : -1200), axis: (x: 0.1, y: 0.1, z: 0.1))
+                        } animation: { threeDYRotate in
+                                .spring(duration: 4).repeatForever(autoreverses: false)
+                        }
+                } placeholder: {
+                    ProgressView()
+                }                    }
+            
+            if showAirForce {
+                Model3D(named: "AirForce") { model in
+                    model
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .scaleEffect(1)
+                        .phaseAnimator([false, true]) { AirPodsMax, threeDYRotate in
+                            AirPodsMax
+                                .rotation3DEffect(.degrees(threeDYRotate ? 0 : -1200), axis: (x: 0.1, y: 0.1, z: 0.1))
+                        } animation: { threeDYRotate in
+                                .spring(duration: 8).repeatForever(autoreverses: false)
+                        }
+                } placeholder: {
+                    ProgressView()
+                }                    }
+            
+            if showAirPodsMax {
+                Model3D(named: "Airpods_Max_Pink") { model in
+                    model
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .scaleEffect(1)
+                        .phaseAnimator([false, true]) { AirPodsMax, threeDYRotate in
+                            AirPodsMax
+                                .rotation3DEffect(.degrees(threeDYRotate ? 0 : -1200), axis: (x: 0.1, y: 0.1, z: 0.1))
+                        } animation: { threeDYRotate in
+                                .spring(duration: 8).repeatForever(autoreverses: false)
+                        }
+                } placeholder: {
+                    ProgressView()
+                }
+            }
+            if showPancakes {
+                Model3D(named: "pancakes") { model in
+                    model
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .scaleEffect(0.5)
+                        .phaseAnimator([false, true]) { AirPodsMax, threeDYRotate in
+                            AirPodsMax
+                                .rotation3DEffect(.degrees(threeDYRotate ? 0 : -1200), axis: (x: 0.1, y: 0.1, z: 0.1))
+                        } animation: { threeDYRotate in
+                                .spring(duration: 8).repeatForever(autoreverses: false)
+                        }
+                } placeholder: {
+                    ProgressView()
+                }
+            }
             if showToyBiplane {
                 Model3D(named: "toy_biplane_idle") { model in
                     model
@@ -53,25 +123,111 @@ struct ContentView: View {
                     ProgressView()
                 }
             }
-            Text("Collectibles")
-            HStack {
-                Button("Toggle AirPods Max") {
-                    showAirPodsMax.toggle()
+            if showIO {
+                Model3D(named: "Io_1_3643") { model in
+                    model
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .scaleEffect(1.5)
+                        .phaseAnimator([false, true]) { AirPodsMax, threeDYRotate in
+                            AirPodsMax
+                                .rotation3DEffect(.degrees(threeDYRotate ? 0 : -1200), axis: (x: 0.1, y: 0.1, z: 0.1))
+                        } animation: { threeDYRotate in
+                                .spring(duration: 8).repeatForever(autoreverses: false)
+                        }
+                } placeholder: {
+                    ProgressView()
                 }
-                Button("Toggle AirForce") {
-                    showAirForce.toggle()
-                }
-                Button("Toggle Pancakes") {
-                    showPancakes.toggle()
-                }
-                Button("Toggle Toy Biplane") {
-                    showToyBiplane.toggle()
-                }
-                Button("Toggle ignition") {
-                    showIgnition.toggle()
+            }
+            if showIgnition {
+                Model3D(named: "ignition") { model in
+                    model
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .scaleEffect(1)
+                        .phaseAnimator([false, true]) { AirPodsMax, threeDYRotate in
+                            AirPodsMax
+                                .rotation3DEffect(.degrees(threeDYRotate ? 0 : -1200), axis: (x: 0.1, y: 0.1, z: 0.1))
+                        } animation: { threeDYRotate in
+                                .spring(duration: 8).repeatForever(autoreverses: false)
+                        }
+                } placeholder: {
+                    ProgressView()
                 }
             }
             LibraryView(path: $navigationPath, isPresentingSpace: $isPresentingSpace)
+            ScrollView {
+                VStack {
+
+                    Text("3D Collectibles")
+                    HStack {
+                        Button("Toggle AirPods Max") {
+                            showAirPodsMax.toggle()
+                        }
+                        Button("Toggle AirForce") {
+                            showAirForce.toggle()
+                        }
+                        Button("Toggle Pancakes") {
+                            showPancakes.toggle()
+                        }
+                        Button("Toggle Toy Biplane") {
+                            showToyBiplane.toggle()
+                        }
+                        Button("Toggle ignition") {
+                            showIgnition.toggle()
+                        }
+
+                        Button("Toggle IO") {
+                            showIO.toggle()
+                        }
+                        Button("Toggle Earth") {
+                            showBattleSpaceship.toggle()
+                        }
+                    }
+                    Text("Music!")
+                    HStack {
+                        Button(action: {
+                            // Call the function and pass the URL as a parameter
+                            openURL(urlString: "https://www.youtube.com/watch?v=Fpn1imb9qZg")
+                        }) {
+                            // Use HStack for horizontal layout or VStack for vertical layout
+                            HStack {
+                                Image("coldplay") // System image
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 100, height: 100)
+                            }
+                        }
+                        Button(action: {
+                            // Call the function and pass the URL as a parameter
+                            openURL(urlString: "https://www.youtube.com/watch?v=N7SHIw9rfyg")
+                        }) {
+                            // Use HStack for horizontal layout or VStack for vertical layout
+                            HStack {
+                                Image("coldplay") // System image
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 100, height: 100)
+                            }
+                        }
+                        
+ 
+                        Button(action: {
+                            // Call the function and pass the URL as a parameter
+                            openURL(urlString: "https://cdn.discordapp.com/attachments/1183063448188362823/1203358218651443211/IMG_7014.mov?ex=65d0cdac&is=65be58ac&hm=8675947ff9da217b90272adcc37af2cf8190514d87e787268354b2ebcb1c1111&")
+                        }) {
+                            // Use HStack for horizontal layout or VStack for vertical layout
+                            HStack {
+                                Image("coldplay") // System image
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 100, height: 100)
+                            }
+                        }
+                        
+                    }
+                }
+            }
         }
         #else
         LibraryView(path: $navigationPath)
