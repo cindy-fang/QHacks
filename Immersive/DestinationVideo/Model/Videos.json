@@ -20,9 +20,9 @@
         "id": 2,
         "url" : "https://cdn.discordapp.com/attachments/1183063448188362823/1203358122341695498/IMG_1240.mov?ex=65d0cd95&is=65be5895&hm=2729846611717253e16f6dfd1967b5062482508dcf34d354cfffaa8fcc4e6045&",
         "title": "Feeding Ducks",
-        "image_name": "lake",
+        "image_name": "park",
         "description": "William feeds ducks on the shores of Lake Ontario!",
-        "destination": "lake",
+        "destination": "park",
         "info": {
             "releaseYear": "2023",
             "contentRating": "NR",
@@ -55,9 +55,9 @@
         "id": 4,
         "url" : "https://cdn.discordapp.com/attachments/1118633568046960651/1203211682864828416/IMG_8263.mov?ex=65d04533&is=65bdd033&hm=f4354c94df8923bea0d26a417dda1bcc0322687832c3a992cb2a9c3b1facbd1d&",
         "title": "QHacks Karaoke",
-        "image_name": "park",
+        "image_name": "ocean",
         "description": "Cindy and William doing karaoke at QHacks!!",
-        "destination": "park",
+        "destination": "ocean",
         "info": {
             "releaseYear": "2023",
             "contentRating": "NR",

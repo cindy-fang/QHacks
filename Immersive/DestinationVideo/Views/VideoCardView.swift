@@ -68,10 +68,10 @@ struct VideoCardView: View {
         switch style {
         case .compact:
             posterCard
-                .frame(width: valueFor(iOS: 0, tvOS: 400, visionOS: 200))
+                .frame(width: valueFor(iOS: 0, tvOS: 400, visionOS: 200), height: 300)
         case .upNext:
             posterCard
-                .frame(width: valueFor(iOS: 250, tvOS: 500, visionOS: 360))
+                .frame(width: valueFor(iOS: 250, tvOS: 500, visionOS: 360), height: 300)
         case .full:
             VStack {
                 image
