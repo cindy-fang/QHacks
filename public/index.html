@@ -10,34 +10,64 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
     <title>React App</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    
+    <div style="position: fixed; bottom: 20px; padding-bottom: 10px; display: flex; justify-content: center; align-items: flex-end; left: 0; right: 0;">
+      <button id="login" style="background: var(--chakra-colors-gray-200); align-items: center; -webkit-box-pack: center; user-select: none; position: relative; white-space: nowrap; vertical-align: middle; outline: 2px solid transparent; outline-offset: 2px; line-height: 1.2; border-radius: var(--chakra-radii-md); font-weight: var(--chakra-fontWeights-semibold); transition-property: var(--chakra-transition-property-common); transition-duration: var(--chakra-transition-duration-normal); height: var(--chakra-sizes-10); min-width: var(--chakra-sizes-10); font-size: var(--chakra-fontSizes-md); padding: 10px; margin-right: 80px;">Login</button>
+      <button id="logout" style="background: var(--chakra-colors-gray-200); align-items: center; -webkit-box-pack: center; user-select: none; position: relative; white-space: nowrap; vertical-align: middle; outline: 2px solid transparent; outline-offset: 2px; line-height: 1.2; border-radius: var(--chakra-radii-md); font-weight: var(--chakra-fontWeights-semibold); transition-property: var(--chakra-transition-property-common); transition-duration: var(--chakra-transition-duration-normal); height: var(--chakra-sizes-10); min-width: var(--chakra-sizes-10); font-size: var(--chakra-fontSizes-md); padding: 10px;">Logout</button>
+    </div>
   </body>
+
+  <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js"></script>
+
+  <script>
+    auth0.createAuth0Client({
+      domain: "dev-56vft1xoyo3s52an.us.auth0.com",
+      clientId: "6iuNjiEwwMJx6EbmKXiDKhASFL7QbDhA",
+      authorizationParams: {
+        redirect_uri: window.location.origin
+      }
+    }).then(async (auth0Client) => {
+      const loginButton = document.getElementById("login");
+      loginButton.addEventListener("click", (e) => {
+        e.preventDefault();
+        auth0Client.loginWithRedirect();
+      });
+
+      if (location.search.includes("state=") && 
+          (location.search.includes("code=") || 
+          location.search.includes("error="))) {
+        await auth0Client.handleRedirectCallback();
+        window.history.replaceState({}, document.title, "/");
+      }
+
+      const logoutButton = document.getElementById("logout");
+      logoutButton.addEventListener("click", (e) => {
+        e.preventDefault();
+        auth0Client.logout();
+      });
+
+      const isAuthenticated = await auth0Client.isAuthenticated();
+      const userProfile = await auth0Client.getUser();
+      const profileElement = document.getElementById("profile");
+
+      if (isAuthenticated) {
+        profileElement.style.display = 'flex';
+        profileElement.innerHTML = `
+          <img src="${userProfile.picture}" alt="Profile Picture" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; margin-right: 8px;" />
+          <div>
+            <p style="margin: 0; font-size: 0.8rem; font-weight: bold;">${userProfile.name}</p>
+            <p style="margin: 0; font-size: 0.7rem;">${userProfile.email}</p>
+          </div>
+        `;
+      } else {
+        profileElement.style.display = 'none';
+      }
+    });
+  </script>
 </html>

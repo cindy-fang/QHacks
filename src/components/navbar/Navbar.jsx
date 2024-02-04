@@ -5,7 +5,6 @@ import './navbar.css';
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
-
   return (
     <div className="eyetunes__navbar">
       <div className="eyetunes__navbar-links">
@@ -32,7 +31,7 @@ const Navbar = () => {
             <p><a href="#info">EyeTunes</a></p>
           </div>
           <div className="eyetunes__navbar-menu_container-links-sign">
-            <p>Sign in</p>
+          <p>Sign in</p>
             <button type="button">Sign up</button>
           </div>
         </div>
