@@ -22,6 +22,9 @@
 		3453AC5A2B6F7E28007ABBC7 /* toy_drummer_idle.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3453AC562B6F7E28007ABBC7 /* toy_drummer_idle.usdz */; };
 		3453AC5C2B6F8300007ABBC7 /* duck.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3453AC5B2B6F8300007ABBC7 /* duck.usdz */; };
 		3453AC5E2B6F840D007ABBC7 /* rubixcube.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3453AC5D2B6F840D007ABBC7 /* rubixcube.usdz */; };
+		3453AC642B6F895D007ABBC7 /* cindy.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3453AC632B6F895D007ABBC7 /* cindy.usdz */; };
+		3453AC662B6F8C93007ABBC7 /* duckarmy.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3453AC652B6F8C93007ABBC7 /* duckarmy.usdz */; };
+		3453AC682B6F90AB007ABBC7 /* redbull.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3453AC672B6F90AB007ABBC7 /* redbull.usdz */; };
 		C417BE482A2EDFE700C8B9CA /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C417BE472A2EDFE700C8B9CA /* GradientView.swift */; };
 		C41945872A2D9C9C00D0E9BC /* WideDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41945862A2D9C9C00D0E9BC /* WideDetailView.swift */; };
 		C4280E352A16D578005475E1 /* VideoExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4280E342A16D578005475E1 /* VideoExtensions.swift */; };
@@ -70,6 +73,9 @@
 		3453AC562B6F7E28007ABBC7 /* toy_drummer_idle.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_drummer_idle.usdz; sourceTree = "<group>"; };
 		3453AC5B2B6F8300007ABBC7 /* duck.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = duck.usdz; sourceTree = "<group>"; };
 		3453AC5D2B6F840D007ABBC7 /* rubixcube.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = rubixcube.usdz; sourceTree = "<group>"; };
+		3453AC632B6F895D007ABBC7 /* cindy.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = cindy.usdz; sourceTree = "<group>"; };
+		3453AC652B6F8C93007ABBC7 /* duckarmy.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = duckarmy.usdz; sourceTree = "<group>"; };
+		3453AC672B6F90AB007ABBC7 /* redbull.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = redbull.usdz; path = ../../../../../Downloads/redbull.usdz; sourceTree = "<group>"; };
 		3D967E9B031C16A162B2B54A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		46AC02AEC4E46201C147C698 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		C417BE472A2EDFE700C8B9CA /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
@@ -179,6 +185,9 @@
 				3453AC542B6F7E27007ABBC7 /* FruitCakeSlice.usdz */,
 				3453AC552B6F7E28007ABBC7 /* LemonMeringuePie.usdz */,
 				3453AC5B2B6F8300007ABBC7 /* duck.usdz */,
+				3453AC632B6F895D007ABBC7 /* cindy.usdz */,
+				3453AC672B6F90AB007ABBC7 /* redbull.usdz */,
+				3453AC652B6F8C93007ABBC7 /* duckarmy.usdz */,
 				3453AC532B6F7E26007ABBC7 /* Rock.usdz */,
 				3453AC5D2B6F840D007ABBC7 /* rubixcube.usdz */,
 				3453AC562B6F7E28007ABBC7 /* toy_drummer_idle.usdz */,
@@ -357,13 +366,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				3453AC402B6F6992007ABBC7 /* toy_biplane_idle.usdz in Resources */,
+				3453AC662B6F8C93007ABBC7 /* duckarmy.usdz in Resources */,
 				3453AC512B6F6F47007ABBC7 /* kulaklıksketchfab.usdz in Resources */,
 				3453AC4E2B6F6F47007ABBC7 /* Earth_1_12756.usdz in Resources */,
 				3453AC4C2B6F6F47007ABBC7 /* Airpods_Max.usdz in Resources */,
 				3453AC4D2B6F6F47007ABBC7 /* ignition.usdz in Resources */,
+				3453AC642B6F895D007ABBC7 /* cindy.usdz in Resources */,
 				3453AC582B6F7E28007ABBC7 /* FruitCakeSlice.usdz in Resources */,
 				3453AC4F2B6F6F47007ABBC7 /* Io_1_3643.usdz in Resources */,
 				3453AC4B2B6F6F47007ABBC7 /* AirForce.usdz in Resources */,
+				3453AC682B6F90AB007ABBC7 /* redbull.usdz in Resources */,
 				C4BFEB662A13FFDB0029E58F /* Videos.json in Resources */,
 				3453AC522B6F6F47007ABBC7 /* pancakes.usdz in Resources */,
 				C45535A429EEFE3100A750E8 /* Preview Assets.xcassets in Resources */,

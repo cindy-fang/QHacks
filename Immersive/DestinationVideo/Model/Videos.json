@@ -101,24 +101,5 @@
             "stars": []
         }
     },
-
-
-    {
-        "id": 7,
-        "url" : "http://playgrounds-cdn.apple.com/assets/ocean/index.m3u8",
-        "title": "Ocean Breeze",
-        "image_name": "ocean",
-        "description": "Experience the great flight of a black beetle, as it crawls along a giant rock near the lake preparing for takeoff. Where it will go, nobody knows!",
-        "destination": "ocean",
-        "info": {
-            "releaseYear": "2023",
-            "contentRating": "NR",
-            "duration": "14s",
-            "genres": [""],
-            "directors": ["E. Qu", "W. Wang", "I. Korovinsky", "C. Fang"],
-            "writers": [],
-            "stars": []
-        }
-    }
 ]
 

@@ -60,14 +60,14 @@ struct ContentView: View {
                 }                    }
             
             if showAirForce {
-                Model3D(named: "AirForce") { model in
+                Model3D(named: "duckarmy") { model in
                     model
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .scaleEffect(1)
                         .phaseAnimator([false, true]) { AirPodsMax, threeDYRotate in
                             AirPodsMax
-                                .rotation3DEffect(.degrees(threeDYRotate ? 0 : -1200), axis: (x: 0.1, y: 0.1, z: 0.1))
+                                .rotation3DEffect(.degrees(threeDYRotate ? 0 : -1200), axis: (x: 0, y: 0.1, z: 0))
                         } animation: { threeDYRotate in
                                 .spring(duration: 8).repeatForever(autoreverses: false)
                         }
@@ -76,11 +76,11 @@ struct ContentView: View {
                 }                    }
             
             if showAirPodsMax {
-                Model3D(named: "LemonMeringuePie") { model in
+                Model3D(named: "redbull") { model in
                     model
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .scaleEffect(0.7)
+                        .scaleEffect(1.2)
                         .phaseAnimator([false, true]) { AirPodsMax, threeDYRotate in
                             AirPodsMax
                                 .rotation3DEffect(.degrees(threeDYRotate ? 0 : -1200), axis: (x: 0, y: 0.1, z: 0))
@@ -166,11 +166,11 @@ struct ContentView: View {
                         Button("Toggle National Bank Rubix Cube") {
                             showIO.toggle()
                         }
-                        Button("Toggle Lemon Meringue Pie") {
+                        Button("Toggle Red Bull") {
                             showAirPodsMax.toggle()
                         }
                         
-                        Button("Toggle Air Force") {
+                        Button("Toggle Duck Army") {
                             showAirForce.toggle()
                         }
                         Button("Toggle FruitCake") {
