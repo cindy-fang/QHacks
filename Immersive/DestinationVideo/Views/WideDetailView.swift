@@ -50,9 +50,9 @@ struct WideDetailView: View {
             Text(video.description)
             
             VStack(alignment: .leading, spacing: 4) {
-                RoleView(role: "Stars", people: video.info.stars)
+                // RoleView(role: "Stars", people: video.info.stars)
                 RoleView(role: "Director", people: video.info.directors)
-                RoleView(role: "Writers", people: video.info.writers)
+                // RoleView(role: "Writers", people: video.info.writers)
             }
             
         }

@@ -53,7 +53,7 @@ struct Video: Identifiable, Hashable, Codable {
         var contentRating: String
         var duration: String
         var genres: [String]
-        var stars: [String]
+        // var stars: [String]
         var directors: [String]
         var writers: [String]
         
